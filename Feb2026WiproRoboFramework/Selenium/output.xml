@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.11.0 on win32)" generated="2026-02-23T16:51:01.933415" rpa="false" schemaversion="5">
+<suite id="s1" name="Shopautomationlab" source="C:\Users\KIIT01\PycharmProjects\Feb2026WiproRoboFramework\selenium\shopautomationlab.robot">
+<test id="s1-t1" name="Verify End-to-End Checkout Flow" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-23T16:51:02.488166" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-23T16:51:02.488166" elapsed="3.940814"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-23T16:51:06.430985" elapsed="0.047125"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=user-name</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-23T16:51:06.479112" elapsed="0.281271"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-23T16:51:06.764382" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-23T16:51:06.763383" elapsed="0.345050"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-02-23T16:51:07.110946" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2026-02-23T16:51:07.234466" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-23T16:51:07.109433" elapsed="0.296646"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-23T16:51:07.412619" level="INFO">Clicking element 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-23T16:51:07.409090" elapsed="0.250716"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\nLogged in successfully.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-02-23T16:51:07.660807" elapsed="0.000998"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=add-to-cart-sauce-labs-backpack</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-23T16:51:07.662803" elapsed="0.061483"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-23T16:51:07.725773" level="INFO">Clicking element 'id=add-to-cart-sauce-labs-backpack'.</msg>
+<arg>id=add-to-cart-sauce-labs-backpack</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-23T16:51:07.724286" elapsed="0.154500"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Added backpack to cart.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-02-23T16:51:07.879797" elapsed="0.001000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-23T16:51:07.881796" level="INFO">Clicking element 'css=.shopping_cart_link'.</msg>
+<arg>css=.shopping_cart_link</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-23T16:51:07.880797" elapsed="0.193324"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Navigated to shopping cart.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-02-23T16:51:08.074121" elapsed="0.002117"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-02-23T16:51:18.350481" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-23T16:51:18.352489" level="FAIL">Element 'id=checkout' not visible after 10 seconds.</msg>
+<arg>id=checkout</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-23T16:51:08.076238" elapsed="10.391276">Element 'id=checkout' not visible after 10 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>id=checkout</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-23T16:51:18.474521" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Clicked Checkout.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2026-02-23T16:51:18.474521" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=first-name</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-23T16:51:18.476029" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=first-name</arg>
+<arg>John</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-23T16:51:18.476029" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=last-name</arg>
+<arg>Doe</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-23T16:51:18.478038" elapsed="0.001001"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=postal-code</arg>
+<arg>12345</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-23T16:51:18.479039" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>id=continue</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-23T16:51:18.480040" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Checkout information filled and submitted.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2026-02-23T16:51:18.480548" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=finish</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-23T16:51:18.481558" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>id=finish</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-23T16:51:18.482559" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Clicked Finish to complete the order.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2026-02-23T16:51:18.487189" elapsed="0.001011"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css=.complete-header</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-23T16:51:18.489198" elapsed="0.000000"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<arg>css=.complete-header</arg>
+<arg>Thank you for your order!</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="NOT RUN" start="2026-02-23T16:51:18.493199" elapsed="0.001508"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Order completion verified successfully!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2026-02-23T16:51:18.494707" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-02-23T16:51:18.495718" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-02-23T16:51:18.495718" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2026-02-23T16:51:02.485898" elapsed="16.020353">Element 'id=checkout' not visible after 10 seconds.</status>
+</test>
+<status status="FAIL" start="2026-02-23T16:51:01.935931" elapsed="16.633510"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Shopautomationlab" id="s1" pass="0" fail="1" skip="0">Shopautomationlab</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

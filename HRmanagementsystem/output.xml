@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.10.8 on win32)" generated="2026-02-21T17:50:14.373619" rpa="false" schemaversion="5">
+<suite id="s1" name="TC 03 UpdatePersonalInfoTest" source="C:\Users\KIIT01\PycharmProjects\HRmanagementsystem\Tests\TC_03_UpdatePersonalInfoTest.robot">
+<test id="s1-t1" name="TC_03 Verify Personal details modification with valid values First Name" line="16">
+<kw name="Given Orange HRM site is launched and user is logged in">
+<kw name="Navigate To OrangeHRM Login Page" owner="LoginPage">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-21T17:50:14.817439" level="INFO">Opening browser 'Chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${LOGIN_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-21T17:50:14.817439" elapsed="5.316211"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-21T17:50:20.133650" elapsed="0.030751"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${TXT_USERNAME}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-21T17:50:20.164401" elapsed="0.947600"/>
+</kw>
+<status status="PASS" start="2026-02-21T17:50:14.815523" elapsed="6.298111"/>
+</kw>
+<kw name="Enter Credentials" owner="LoginPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-21T17:50:21.125241" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<arg>${TXT_USERNAME}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T17:50:21.115652" elapsed="0.433271"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-21T17:50:21.550923" level="INFO">Typing text 'admin123' into text field 'name=password'.</msg>
+<arg>${TXT_PASSWORD}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T17:50:21.549923" elapsed="0.197212"/>
+</kw>
+<arg>${VALID_USER}</arg>
+<arg>${VALID_PASS}</arg>
+<status status="PASS" start="2026-02-21T17:50:21.113634" elapsed="0.633501"/>
+</kw>
+<kw name="Submit Login Form" owner="LoginPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-21T17:50:21.748148" level="INFO">Clicking button 'css=[type="submit"]'.</msg>
+<arg>${BTN_LOGIN}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T17:50:21.748148" elapsed="1.663943"/>
+</kw>
+<status status="PASS" start="2026-02-21T17:50:21.748148" elapsed="1.663943"/>
+</kw>
+<kw name="Verify Dashboard Is Displayed" owner="LoginPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LBL_DASHBOARD}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-21T17:50:23.412091" elapsed="0.677076"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-21T17:50:24.108476" level="INFO">Element 'xpath=//h6[contains(@class, 'oxd-text') and text()='Dashboard']' is displayed.</msg>
+<arg>${LBL_DASHBOARD}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-21T17:50:24.089167" elapsed="0.019309"/>
+</kw>
+<kw name="Location Should Contain" owner="SeleniumLibrary">
+<msg time="2026-02-21T17:50:24.116547" level="INFO">Current location contains '/web/index.php/dashboard'.</msg>
+<arg>/web/index.php/dashboard</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<status status="PASS" start="2026-02-21T17:50:24.109481" elapsed="0.007066"/>
+</kw>
+<status status="PASS" start="2026-02-21T17:50:23.412091" elapsed="0.704456"/>
+</kw>
+<status status="PASS" start="2026-02-21T17:50:14.815523" elapsed="9.301024"/>
+</kw>
+<kw name="When User navigates to Personal Information Page">
+<kw name="Navigate To My Info Page" owner="MyInfoPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${MENU_MY_INFO}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-21T17:50:24.121554" elapsed="0.024267"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-21T17:50:24.145821" level="INFO">Clicking element 'xpath=//span[text()='My Info']/parent::a'.</msg>
+<arg>${MENU_MY_INFO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T17:50:24.145821" elapsed="2.054434"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${TXT_FIRST_NAME}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-21T17:50:26.200255" elapsed="0.728435"/>
+</kw>
+<status status="PASS" start="2026-02-21T17:50:24.121554" elapsed="2.808136"/>
+</kw>
+<status status="PASS" start="2026-02-21T17:50:24.119538" elapsed="2.810152"/>
+</kw>
+<kw name="And User updates First Name with a valid new value">
+<kw name="Update First Name" owner="MyInfoPage">
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-02-21T17:50:26.931971" level="INFO">Sending key(s) ('CTRL+a+BACKSPACE',) to name=firstName element.</msg>
+<msg time="2026-02-21T17:50:27.239717" level="INFO">Pressing special key CONTROL down.</msg>
+<msg time="2026-02-21T17:50:27.240719" level="INFO">Sending key a</msg>
+<msg time="2026-02-21T17:50:27.241734" level="INFO">Pressing special key BACKSPACE down.</msg>
+<msg time="2026-02-21T17:50:27.241734" level="INFO">Releasing special key CONTROL.</msg>
+<msg time="2026-02-21T17:50:27.241734" level="INFO">Releasing special key BACKSPACE.</msg>
+<arg>${TXT_FIRST_NAME}</arg>
+<arg>CTRL+a+BACKSPACE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-02-21T17:50:26.930976" elapsed="0.326882"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-21T17:50:27.257858" level="INFO">Typing text 'Sushant' into text field 'name=firstName'.</msg>
+<arg>${TXT_FIRST_NAME}</arg>
+<arg>${new_first_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T17:50:27.257858" elapsed="0.151190"/>
+</kw>
+<arg>${NEW_FIRST_NAME}</arg>
+<status status="PASS" start="2026-02-21T17:50:26.929690" elapsed="0.479358"/>
+</kw>
+<status status="PASS" start="2026-02-21T17:50:26.929690" elapsed="0.480368"/>
+</kw>
+<kw name="And User clicks on Save button">
+<kw name="Save Personal Details" owner="MyInfoPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-21T17:50:27.412057" level="INFO">Clicking button 'xpath=(//button[@type='submit'])[1]'.</msg>
+<msg time="2026-02-21T17:50:28.832024" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-21T17:50:28.832024" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button data-v-10d463b7="" data-v-6653c066="" type="submit" class="oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space"&gt;...&lt;/button&gt; is not clickable at point (1030, 500). Other element would receive the click: &lt;div class="orangehrm-card-container"&gt;...&lt;/div&gt;
+  (Session info: chrome=145.0.7632.76); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff611784435
+	0x7ff611784490
+	0x7ff61151d49d
+	0x7ff611580845
+	0x7ff61157df5a
+	0x7ff61157ade5
+	0x7ff611579c97
+	0x7ff61156b1c6
+	0x7ff6115a17ca
+	0x7ff61156aa46
+	0x7ff6115c5728
+	0x7ff611568e38
+	0x7ff611569d23
+	0x7ff611a53b30
+	0x7ff611a4e3b8
+	0x7ff611a6e72a
+	0x7ff6117a07e5
+	0x7ff6117a978c
+	0x7ff61178d794
+	0x7ff61178d946
+	0x7ff611773457
+	0x7ffc9597e8d7
+	0x7ffc9708c40c
+</msg>
+<arg>${BTN_SAVE_INFO}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2026-02-21T17:50:27.412057" elapsed="1.426504">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button data-v-10d463b7="" data-v-6653c066="" type="submit" class="oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space"&gt;...&lt;/button&gt; is not clickable at point (1030, 500). Other element would receive the click: &lt;div class="orangehrm-card-container"&gt;...&lt;/div&gt;
+  (Session info: chrome=145.0.7632.76); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff611784435
+	0x7ff611784490
+	0x7ff61151d49d
+	0x7ff611580845
+	0x7ff61157df5a
+	0x7ff61157ade5
+	0x7ff611579c97
+	0x7ff61156b1c6
+	0x7ff6115a17ca
+	0x7ff61156aa46
+	0x7ff6115c5728
+	0x7ff611568e38
+	0x7ff611569d23
+	0x7ff611a53b30
+	0x7ff611a4e3b8
+	0x7ff611a6e72a
+	0x7ff6117a07e5
+	0x7ff6117a978c
+	0x7ff61178d794
+	0x7ff61178d946
+	0x7ff611773457
+	0x7ffc9597e8d7
+	0x7ffc9708c40c
+</status>
+</kw>
+<status status="FAIL" start="2026-02-21T17:50:27.411059" elapsed="1.428520">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button data-v-10d463b7="" data-v-6653c066="" type="submit" class="oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space"&gt;...&lt;/button&gt; is not clickable at point (1030, 500). Other element would receive the click: &lt;div class="orangehrm-card-container"&gt;...&lt;/div&gt;
+  (Session info: chrome=145.0.7632.76); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff611784435
+	0x7ff611784490
+	0x7ff61151d49d
+	0x7ff611580845
+	0x7ff61157df5a
+	0x7ff61157ade5
+	0x7ff611579c97
+	0x7ff61156b1c6
+	0x7ff6115a17ca
+	0x7ff61156aa46
+	0x7ff6115c5728
+	0x7ff611568e38
+	0x7ff611569d23
+	0x7ff611a53b30
+	0x7ff611a4e3b8
+	0x7ff611a6e72a
+	0x7ff6117a07e5
+	0x7ff6117a978c
+	0x7ff61178d794
+	0x7ff61178d946
+	0x7ff611773457
+	0x7ffc9597e8d7
+	0x7ffc9708c40c
+</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>30s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-02-21T17:50:28.840584" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2026-02-21T17:50:27.410058" elapsed="1.430526">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button data-v-10d463b7="" data-v-6653c066="" type="submit" class="oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space"&gt;...&lt;/button&gt; is not clickable at point (1030, 500). Other element would receive the click: &lt;div class="orangehrm-card-container"&gt;...&lt;/div&gt;
+  (Session info: chrome=145.0.7632.76); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff611784435
+	0x7ff611784490
+	0x7ff61151d49d
+	0x7ff611580845
+	0x7ff61157df5a
+	0x7ff61157ade5
+	0x7ff611579c97
+	0x7ff61156b1c6
+	0x7ff6115a17ca
+	0x7ff61156aa46
+	0x7ff6115c5728
+	0x7ff611568e38
+	0x7ff611569d23
+	0x7ff611a53b30
+	0x7ff611a4e3b8
+	0x7ff611a6e72a
+	0x7ff6117a07e5
+	0x7ff6117a978c
+	0x7ff61178d794
+	0x7ff61178d946
+	0x7ff611773457
+	0x7ffc9597e8d7
+	0x7ffc9708c40c
+</status>
+</kw>
+<kw name="Then A success message is displayed indicating the profile was updated">
+<status status="NOT RUN" start="2026-02-21T17:50:28.841577" elapsed="0.000509"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-21T17:50:28.842086" elapsed="2.747378"/>
+</kw>
+<doc>Verify that an ESS User can successfully update their First Name.</doc>
+<status status="FAIL" start="2026-02-21T17:50:14.813425" elapsed="16.776949">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button data-v-10d463b7="" data-v-6653c066="" type="submit" class="oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space"&gt;...&lt;/button&gt; is not clickable at point (1030, 500). Other element would receive the click: &lt;div class="orangehrm-card-container"&gt;...&lt;/div&gt;
+  (Session info: chrome=145.0.7632.76); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff611784435
+	0x7ff611784490
+	0x7ff61151d49d
+	0x7ff611580845
+	0x7ff61157df5a
+	0x7ff61157ade5
+	0x7ff611579c97
+	0x7ff61156b1c6
+	0x7ff6115a17ca
+	0x7ff61156aa46
+	0x7ff6115c5728
+	0x7ff611568e38
+	0x7ff611569d23
+	0x7ff611a53b30
+	0x7ff611a4e3b8
+	0x7ff611a6e72a
+	0x7ff6117a07e5
+	0x7ff6117a978c
+	0x7ff61178d794
+	0x7ff61178d946
+	0x7ff611773457
+	0x7ffc9597e8d7
+	0x7ffc9708c40c
+</status>
+</test>
+<doc>Test Suite for OrangeHRM Personal Information Modification</doc>
+<status status="FAIL" start="2026-02-21T17:50:14.374617" elapsed="17.217764"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="TC 03 UpdatePersonalInfoTest" id="s1" pass="0" fail="1" skip="0">TC 03 UpdatePersonalInfoTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

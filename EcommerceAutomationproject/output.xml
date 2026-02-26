@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.10.8 on win32)" generated="2026-02-21T15:32:51.170873" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcase10" source="C:\Users\KIIT01\PycharmProjects\EcommerceAutomationproject\Testcase10.robot">
+<test id="s1-t1" name="Verify Subscription In Home Page" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-21T15:32:51.779705" level="INFO">Opening browser 'Chrome' to base url 'https://automationexercise.com'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-21T15:32:51.778709" elapsed="5.411390"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-21T15:32:57.190099" elapsed="0.026917"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//a[@href='/']</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-21T15:32:57.219020" elapsed="0.046890"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-21T15:32:57.297136" level="INFO">Element 'xpath=//a[@href='/']' is displayed.</msg>
+<arg>xpath=//a[@href='/']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-21T15:32:57.266919" elapsed="0.030217"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-02-21T15:32:57.300144" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-02-21T15:32:57.298146" elapsed="0.019749"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//h2[translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz')='subscription']</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-21T15:32:57.319546" elapsed="0.061851"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=susbscribe_email</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-21T15:32:57.382921" elapsed="0.023075"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-21T15:32:57.407026" level="INFO">Typing text 'sushant_test_sub@gmail.com' into text field 'id=susbscribe_email'.</msg>
+<arg>id=susbscribe_email</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T15:32:57.405996" elapsed="0.133933"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-21T15:32:57.540933" level="INFO">Clicking element 'id=subscribe'.</msg>
+<arg>id=subscribe</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T15:32:57.539929" elapsed="0.126713"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=success-subscribe</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-21T15:32:57.667654" elapsed="0.022497"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2026-02-21T15:32:57.691161" level="INFO">Verifying element 'id=success-subscribe' contains exact text 'You have been successfully subscribed!'.</msg>
+<arg>id=success-subscribe</arg>
+<arg>You have been successfully subscribed!</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2026-02-21T15:32:57.691161" elapsed="0.035994"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-21T15:32:57.728156" elapsed="2.205001"/>
+</kw>
+<doc>Test Case 10: Scroll to footer, subscribe using email, and verify success message.</doc>
+<status status="PASS" start="2026-02-21T15:32:51.775713" elapsed="8.157444"/>
+</test>
+<doc>Automation Exercise - Verify Subscription in home page</doc>
+<status status="PASS" start="2026-02-21T15:32:51.172871" elapsed="8.761624"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Testcase10" id="s1" pass="1" fail="0" skip="0">Testcase10</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

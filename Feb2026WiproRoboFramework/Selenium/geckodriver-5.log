@@ -1,0 +1,28 @@
+1771566020730	geckodriver	INFO	Listening on 127.0.0.1:63999
+1771566023811	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64000" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\KIIT01\\AppData\\Local\\Temp\\rust_mozprofileb2GGC2"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1771566024306	Marionette	INFO	Marionette enabled
+1771566024447	Marionette	INFO	Listening on port 64009
+WebDriver BiDi listening on ws://127.0.0.1:64000
+Read port: 64009
+1771566024603	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://1c5c1ecf7303.e10058c8.ap-south-1.token.awswaf.com/1c5c1ecf7303/6ab7d267eef9/66125abca348/challenge.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://1c5c1ecf7303.e10058c8.ap-south-1.token.awswaf.com/1c5c1ecf7303/6ab7d267eef9/66125abca348/challenge.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.in/, line 3700: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://m.media-amazon.com/images/I/81BXdoJ-FBL.js?AUIClients/FWCIMAssets, line 298: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1771566038140	Marionette	INFO	Stopped listening on port 64009
+Dynamically enable window occlusion 1
+JavaScript warning: https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles, line 298: Script terminated by timeout at:
+t.emit@https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles:298:1312
+G@https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles:20067:16340
+z@https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles:20067:15874
+E[3]@https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles:20067:17576
+q@https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles:20067:15200
+S/<@https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles:298:686
+
+JavaScript error: resource://gre/actors/TranslationsParent.sys.mjs, line 563: TypeError: can't access property "innerWindowID", this.browsingContext.top.embedderElement is null
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
+JavaScript warning: https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles, line 20086: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/actors/TranslationsParent.sys.mjs, line 4342: Error: The innerWindowId for the TranslationsParent was not available.

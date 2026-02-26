@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.11.0 on win32)" generated="2026-02-20T17:01:58.773066" rpa="false" schemaversion="5">
+<suite id="s1" name="CSV" source="C:\Users\KIIT01\PycharmProjects\Feb2026WiproRoboFramework\DataDriven\CSV.robot">
+<test id="s1-t1" name="Login with user admin@yourstore.com and admin12" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2026-02-20T17:01:59.065713" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-20T17:01:59.065713" elapsed="10.693573"/>
+</kw>
+<kw name="Login Test">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//input[@name='username']</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-20T17:02:09.760562" elapsed="2.747163"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-20T17:02:12.508235" level="INFO">Typing text 'admin@yourstore.com' into text field 'xpath=//input[@name='username']'.</msg>
+<arg>xpath=//input[@name='username']</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T17:02:12.508235" elapsed="0.120991"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-20T17:02:12.630737" level="INFO">Typing text 'admin12' into text field 'xpath=//input[@name='password']'.</msg>
+<arg>xpath=//input[@name='password']</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T17:02:12.630229" elapsed="0.096344"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-20T17:02:12.727591" level="INFO">Clicking element 'xpath=//button[@type='submit']'.</msg>
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T17:02:12.726573" elapsed="0.065990"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-20T17:02:15.795060" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-20T17:02:12.793570" elapsed="3.001490"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\nAttempted login with username: ${username}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-02-20T17:02:15.795060" elapsed="0.001010"/>
+</kw>
+<arg>username=admin@yourstore.com</arg>
+<arg>password=admin12</arg>
+<status status="PASS" start="2026-02-20T17:02:09.760562" elapsed="6.035508"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-20T17:02:15.796070" elapsed="2.284072"/>
+</kw>
+<status status="PASS" start="2026-02-20T17:01:59.062705" elapsed="19.018416"/>
+</test>
+<test id="s1-t2" name="Login with user adm23@yourstore.com and admin" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2026-02-20T17:02:18.084099" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-20T17:02:18.084099" elapsed="5.676473"/>
+</kw>
+<kw name="Login Test">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//input[@name='username']</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-20T17:02:23.761625" elapsed="0.748956"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-20T17:02:24.512080" level="INFO">Typing text 'adm23@yourstore.com' into text field 'xpath=//input[@name='username']'.</msg>
+<arg>xpath=//input[@name='username']</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T17:02:24.510581" elapsed="0.132750"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-20T17:02:24.644349" level="INFO">Typing text 'admin' into text field 'xpath=//input[@name='password']'.</msg>
+<arg>xpath=//input[@name='password']</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T17:02:24.644349" elapsed="0.078224"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-20T17:02:24.723572" level="INFO">Clicking element 'xpath=//button[@type='submit']'.</msg>
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T17:02:24.723572" elapsed="0.062510"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-20T17:02:27.787887" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-20T17:02:24.786082" elapsed="3.001805"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\nAttempted login with username: ${username}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-02-20T17:02:27.787887" elapsed="0.000000"/>
+</kw>
+<arg>username=adm23@yourstore.com</arg>
+<arg>password=admin</arg>
+<status status="PASS" start="2026-02-20T17:02:23.760572" elapsed="4.027315"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-20T17:02:27.788999" elapsed="2.126281"/>
+</kw>
+<status status="PASS" start="2026-02-20T17:02:18.083097" elapsed="11.832183"/>
+</test>
+<test id="s1-t3" name="Login with user adm@yourstore.com and admin" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2026-02-20T17:02:29.918717" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-20T17:02:29.917692" elapsed="5.380298"/>
+</kw>
+<kw name="Login Test">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//input[@name='username']</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-20T17:02:35.298505" elapsed="0.685514"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-20T17:02:35.985020" level="INFO">Typing text 'adm@yourstore.com' into text field 'xpath=//input[@name='username']'.</msg>
+<arg>xpath=//input[@name='username']</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T17:02:35.985020" elapsed="0.125813"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-20T17:02:36.111822" level="INFO">Typing text 'admin' into text field 'xpath=//input[@name='password']'.</msg>
+<arg>xpath=//input[@name='password']</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T17:02:36.110833" elapsed="0.088015"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-20T17:02:36.198848" level="INFO">Clicking element 'xpath=//button[@type='submit']'.</msg>
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T17:02:36.198848" elapsed="0.070161"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-20T17:02:39.270584" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-20T17:02:36.269009" elapsed="3.001575"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\nAttempted login with username: ${username}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-02-20T17:02:39.270584" elapsed="0.000000"/>
+</kw>
+<arg>username=adm@yourstore.com</arg>
+<arg>password=admin</arg>
+<status status="PASS" start="2026-02-20T17:02:35.298505" elapsed="3.972079"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-20T17:02:39.272102" elapsed="2.148619"/>
+</kw>
+<status status="PASS" start="2026-02-20T17:02:29.916183" elapsed="11.504538"/>
+</test>
+<status status="PASS" start="2026-02-20T17:01:58.775066" elapsed="42.646550"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="CSV" id="s1" pass="3" fail="0" skip="0">CSV</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

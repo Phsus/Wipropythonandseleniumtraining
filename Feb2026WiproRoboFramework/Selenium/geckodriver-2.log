@@ -1,0 +1,57 @@
+1771481068187	geckodriver	INFO	Listening on 127.0.0.1:50374
+1771481071324	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50375" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\KIIT01\\AppData\\Local\\Temp\\rust_mozprofileGOcey2"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1771481072151	Marionette	INFO	Marionette enabled
+1771481072380	Marionette	INFO	Listening on port 57521
+WebDriver BiDi listening on ws://127.0.0.1:50375
+Read port: 57521
+1771481072765	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Calling WaitFlushedEvent::Run: is delayed: 2562
+console.error: [Exception... "Favicon at "https://rahulshettyacademy.com/AutomationPractice/images/rs_logo.png" is too large."  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource:///modules/FaviconLoader.sys.mjs :: decodeImage :: line 85"  data: no]
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-NVJT9K1HZ2&cx=c&gtm=4e62h1, line 465: Script terminated by timeout at:
+Mm<@https://www.googletagmanager.com/gtag/js?id=G-NVJT9K1HZ2&cx=c&gtm=4e62h1:465:1142
+Nm@https://www.googletagmanager.com/gtag/js?id=G-NVJT9K1HZ2&cx=c&gtm=4e62h1:466:41
+Pm@https://www.googletagmanager.com/gtag/js?id=G-NVJT9K1HZ2&cx=c&gtm=4e62h1:467:75
+PG.prototype.canBeAccepted@https://www.googletagmanager.com/gtag/js?id=G-NVJT9K1HZ2&cx=c&gtm=4e62h1:855:228
+RL@https://www.googletagmanager.com/gtag/js?id=G-NVJT9K1HZ2&cx=c&gtm=4e62h1:948:806
+k.ys@https://www.googletagmanager.com/gtag/js?id=G-NVJT9K1HZ2&cx=c&gtm=4e62h1:1024:103
+k.xs/</<@https://www.googletagmanager.com/gtag/js?id=G-NVJT9K1HZ2&cx=c&gtm=4e62h1:1024:31
+zm@https://www.googletagmanager.com/gtag/js?id=G-NVJT9K1HZ2&cx=c&gtm=4e62h1:463:194
+Ao@https://www.googletagmanager.com/gtag/js?id=G-NVJT9K1HZ2&cx=c&gtm=4e62h1:483:160
+k.xs/<@https://www.googletagmanager.com/gtag/js?id=G-NVJT9K1HZ2&cx=c&gtm=4e62h1:1024:17
+c@https://www.googletagmanager.com/gtag/js?id=G-NVJT9K1HZ2&cx=c&gtm=4e62h1:947:402
+NL@https://www.googletagmanager.com/gtag/js?id=G-NVJT9K1HZ2&cx=c&gtm=4e62h1:948:232
+k.xs@https://www.googletagmanager.com/gtag/js?id=G-NVJT9K1HZ2&cx=c&gtm=4e62h1:1024:3
+b@https://www.googletagmanager.com/gtag/js?id=G-NVJT9K1HZ2&cx=c&gtm=4e62h1:1033:951
+v@https://www.googletagmanager.com/gtag/js?id=G-NVJT9K1HZ2&cx=c&gtm=4e62h1:611:147
+Im@https://www.googletagmanager.com/gtag/js?id=G-NVJT9K1HZ2&cx=c&gtm=4e62h1:465:517
+ju@https://www.googletagmanager.com/gtag/js?id=G-NVJT9K1HZ2&cx=c&gtm=4e62h1:611:230
+iu.prototype.flush@https://www.googletagmanager.com/gtag/js?id=G-NVJT9K1HZ2&cx=c&gtm=4e62h1:615:302
+iu.prototype.push@https://www.googletagmanager.com/gtag/js?id=G-NVJT9K1HZ2&cx=c&gtm=4e62h1:613:379
+Xt@https://www.googletagmanager.com/gtag/js?id=G-NVJT9K1HZ2&cx=c&gtm=4e62h1:607:527
+zR/<@https://www.googletagmanager.com/gtag/js?id=G-NVJT9K1HZ2&cx=c&gtm=4e62h1:1034:174
+k.lq/<@https://www.googletagmanager.com/gtag/js?id=G-NVJT9K1HZ2&cx=c&gtm=4e62h1:976:126
+k.lq/c/<@https://www.googletagmanager.com/gtag/js?id=G-NVJT9K1HZ2&cx=c&gtm=4e62h1:975:418
+
+1771481104260	Marionette	INFO	Stopped listening on port 57521
+JavaScript error: resource://gre/modules/PrivateBrowsingUtils.sys.mjs, line 19: TypeError: can't access property "isChromeWindow", aWindow is null
+Dynamically enable window occlusion 1
+console.warn: services.settings: main/nimbus-secure-experiments sync interrupted by shutdown
+console.warn: services.settings: main/search-config-icons sync interrupted by shutdown
+console.warn: services.settings: main/devtools-compatibility-browsers sync interrupted by shutdown
+console.warn: services.settings: main/url-classifier-exceptions sync interrupted by shutdown
+console.warn: services.settings: main/tracking-protection-lists sync interrupted by shutdown
+console.warn: services.settings: main/vpn-serverlist sync interrupted by shutdown
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
+console.warn: services.settings: main/doh-providers sync interrupted by shutdown
+console.warn: services.settings: main/addons-data-leak-blocker-domains sync interrupted by shutdown
+console.warn: services.settings: main/newtab-wallpapers-v2 sync interrupted by shutdown
+console.warn: services.settings: security-state/onecrl sync interrupted by shutdown
+console.warn: services.settings: main/websites-with-shared-credential-backends sync interrupted by shutdown
+console.warn: services.settings: main/password-rules sync interrupted by shutdown
+console.warn: services.settings: main/search-config-v2 sync interrupted by shutdown
+console.warn: services.settings: main/message-groups sync interrupted by shutdown
+console.warn: services.settings: main/top-sites sync interrupted by shutdown
+console.error: (new AbortError("IndexedDB: main/translations-models getLastModified() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/IDBHelpers.sys.mjs", 16))
