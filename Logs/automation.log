@@ -1,0 +1,108 @@
+2026-02-25 12:40:55,503 - utilities.logger - INFO - Opening application for user: Admin
+2026-02-25 12:41:00,690 - utilities.logger - INFO - Entering credentials - Username: Admin, Password: wrongpass
+2026-02-25 12:41:02,970 - utilities.logger - INFO - Validating invalid credentials error message
+2026-02-25 12:41:15,348 - utilities.logger - INFO - Opening application for user: None
+2026-02-25 12:41:26,809 - utilities.logger - INFO - Entering credentials - Username: None, Password: None
+2026-02-25 12:46:17,921 - utilities.logger - INFO - Opening application for user: Admin
+2026-02-25 12:46:22,707 - utilities.logger - INFO - Entering credentials - Username: Admin, Password: admin123
+2026-02-25 12:46:25,045 - utilities.logger - INFO - Validating successful login
+2026-02-25 12:46:39,162 - utilities.logger - INFO - Opening application for user: Admin
+2026-02-25 12:46:43,564 - utilities.logger - INFO - Entering credentials - Username: Admin, Password: wrongpass
+2026-02-25 12:46:45,885 - utilities.logger - INFO - Validating invalid credentials error message
+2026-02-25 12:54:22,767 - utilities.logger - INFO - Opening application for user: Admin
+2026-02-25 12:54:22,779 - utilities.logger - INFO - Opening application for user: Admin
+2026-02-25 12:54:27,106 - utilities.logger - INFO - Entering credentials - Username: Admin, Password: wrongpass
+2026-02-25 12:54:28,220 - utilities.logger - INFO - Entering credentials - Username: Admin, Password: admin123
+2026-02-25 12:54:29,314 - utilities.logger - INFO - Validating invalid credentials error message
+2026-02-25 12:54:30,464 - utilities.logger - INFO - Validating successful login
+2026-02-25 13:49:51,952 - INFO - --- Starting Test for User: Admin ---
+2026-02-25 13:49:53,889 - INFO - Performing login
+2026-02-25 13:49:57,878 - INFO - Validating error message for invalid login
+2026-02-25 13:49:57,888 - INFO - --- Test Finished for Admin ---
+2026-02-25 13:50:05,383 - INFO - --- Starting Test for User: Admin ---
+2026-02-25 13:50:06,701 - INFO - Performing login
+2026-02-25 13:50:10,093 - INFO - Validating error message for invalid login
+2026-02-25 13:50:10,101 - INFO - --- Test Finished for Admin ---
+2026-02-25 13:55:41,586 - INFO - --- Starting Test for User: Admin ---
+2026-02-25 13:55:42,345 - INFO - Performing login
+2026-02-25 13:55:44,882 - INFO - Validating error message for invalid login
+2026-02-25 13:55:44,886 - INFO - --- Test Finished for Admin ---
+2026-02-25 13:55:48,241 - INFO - --- Starting Test for User: Admin ---
+2026-02-25 13:55:48,930 - INFO - Performing login
+2026-02-25 13:55:51,317 - INFO - Validating error message for invalid login
+2026-02-25 13:55:51,321 - INFO - --- Test Finished for Admin ---
+2026-02-25 14:00:42,265 - INFO - --- Starting Test for User: Admin ---
+2026-02-25 14:00:43,353 - INFO - Performing login
+2026-02-25 14:00:46,271 - INFO - Validating error message for invalid login
+2026-02-25 14:00:46,278 - INFO - --- Test Finished for Admin ---
+2026-02-25 14:02:29,417 - INFO - --- Starting Test for User: Admin ---
+2026-02-25 14:02:30,499 - INFO - Performing login
+2026-02-25 14:02:33,498 - INFO - Validating error message for invalid login
+2026-02-25 14:02:33,507 - INFO - --- Test Finished for Admin ---
+2026-02-25 14:18:20,217 - INFO - --- Running Test for User: standard_user ---
+2026-02-25 14:18:23,925 - INFO - Login successful. Proceeding with full purchase flow.
+2026-02-25 14:18:40,543 - INFO - --- Running Test for User: locked_out_user ---
+2026-02-25 14:18:44,478 - INFO - Checking expected failure behavior for: locked_out_user
+2026-02-25 14:18:44,488 - INFO - --- Test Finished for locked_out_user ---
+2026-02-25 14:18:48,115 - INFO - --- Running Test for User: problem_user ---
+2026-02-25 14:18:52,070 - INFO - Checking expected failure behavior for: problem_user
+2026-02-25 14:22:23,326 - INFO - --- Running Test for User: standard_user ---
+2026-02-25 14:22:27,548 - INFO - Proceeding with full purchase flow
+2026-02-25 14:28:49,066 - INFO - --- Running Test for User: standard_user ---
+2026-02-25 14:28:52,744 - INFO - Proceeding with full purchase flow
+2026-02-25 14:29:09,809 - INFO - --- Running Test for User: locked_out_user ---
+2026-02-25 14:29:13,782 - INFO - Checking locked out user gets an error
+2026-02-25 14:29:13,790 - INFO - --- Test Finished for locked_out_user ---
+2026-02-25 14:29:17,384 - INFO - --- Running Test for User: problem_user ---
+2026-02-25 14:29:21,211 - INFO - Checking problem user reached inventory but has issues
+2026-02-25 14:29:21,219 - INFO - --- Test Finished for problem_user ---
+2026-02-25 14:31:11,297 - INFO - --- Running Test for User: standard_user ---
+2026-02-25 14:31:14,463 - INFO - Proceeding with full purchase flow
+2026-02-25 14:31:15,155 - INFO - End-to-End Test Passed!
+2026-02-25 14:31:15,155 - INFO - --- Test Finished for standard_user ---
+2026-02-25 14:31:18,510 - INFO - --- Running Test for User: locked_out_user ---
+2026-02-25 14:31:21,500 - INFO - Checking locked out user gets an error
+2026-02-25 14:31:21,504 - INFO - --- Test Finished for locked_out_user ---
+2026-02-25 14:31:24,809 - INFO - --- Running Test for User: problem_user ---
+2026-02-25 14:31:27,499 - INFO - Checking problem user reached inventory but has issues
+2026-02-25 14:31:27,505 - INFO - --- Test Finished for problem_user ---
+2026-02-25 14:32:08,328 - INFO - --- Running Test for User: standard_user ---
+2026-02-25 14:32:11,414 - INFO - Proceeding with full purchase flow
+2026-02-25 14:32:12,070 - INFO - End-to-End Test Passed!
+2026-02-25 14:32:12,071 - INFO - --- Test Finished for standard_user ---
+2026-02-25 14:32:15,442 - INFO - --- Running Test for User: locked_out_user ---
+2026-02-25 14:32:18,830 - INFO - Checking locked out user gets an error
+2026-02-25 14:32:18,835 - INFO - --- Test Finished for locked_out_user ---
+2026-02-25 14:32:22,180 - INFO - --- Running Test for User: problem_user ---
+2026-02-25 14:32:25,217 - INFO - Checking problem user reached inventory but has issues
+2026-02-25 14:32:25,221 - INFO - --- Test Finished for problem_user ---
+2026-02-25 15:49:45,128 - INFO -  Running Test for User: standard_user 
+2026-02-25 15:49:48,581 - INFO - Proceeding with full purchase flow
+2026-02-25 15:49:49,185 - INFO - End-to-End Test Passed!
+2026-02-25 15:49:49,185 - INFO -  Test Finished for standard_user 
+2026-02-25 15:49:52,587 - INFO -  Running Test for User: locked_out_user 
+2026-02-25 15:49:55,778 - INFO - Checking locked out user gets an error
+2026-02-25 15:49:55,782 - INFO -  Test Finished for locked_out_user 
+2026-02-25 15:49:59,078 - INFO -  Running Test for User: problem_user 
+2026-02-25 15:50:02,250 - INFO - Checking problem user reached inventory but has issues
+2026-02-25 15:50:02,257 - INFO -  Test Finished for problem_user 
+2026-02-25 15:56:11,486 - INFO -  Running Test for User: standard_user 
+2026-02-25 15:56:11,643 - INFO -  Running Test for User: problem_user 
+2026-02-25 15:56:12,212 - INFO -  Running Test for User: locked_out_user 
+2026-02-25 15:56:15,807 - INFO - Checking problem user reached inventory but has issues
+2026-02-25 15:56:15,814 - INFO -  Test Finished for problem_user 
+2026-02-25 15:56:15,960 - INFO - Proceeding with full purchase flow
+2026-02-25 15:56:16,526 - INFO - Checking locked out user gets an error
+2026-02-25 15:56:16,533 - INFO -  Test Finished for locked_out_user 
+2026-02-25 15:56:17,068 - INFO - End-to-End Test Passed!
+2026-02-25 15:56:17,069 - INFO -  Test Finished for standard_user 
+2026-02-25 15:59:06,389 - INFO -  Running Test for User: problem_user 
+2026-02-25 15:59:06,658 - INFO -  Running Test for User: standard_user 
+2026-02-25 15:59:06,658 - INFO -  Running Test for User: locked_out_user 
+2026-02-25 15:59:11,088 - INFO - Checking problem user reached inventory but has issues
+2026-02-25 15:59:11,096 - INFO -  Test Finished for problem_user 
+2026-02-25 15:59:11,348 - INFO - Checking locked out user gets an error
+2026-02-25 15:59:11,355 - INFO -  Test Finished for locked_out_user 
+2026-02-25 15:59:11,405 - INFO - Proceeding with full purchase flow
+2026-02-25 15:59:12,404 - INFO - End-to-End Test Passed!
+2026-02-25 15:59:12,404 - INFO -  Test Finished for standard_user 
