@@ -1,0 +1,61 @@
+1771667582752	geckodriver	INFO	Listening on 127.0.0.1:58975
+1771667585825	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58976" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\KIIT01\\AppData\\Local\\Temp\\rust_mozprofileHASj8P"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1771667586093	Marionette	INFO	Marionette enabled
+1771667586189	Marionette	INFO	Listening on port 58983
+WebDriver BiDi listening on ws://127.0.0.1:58976
+Read port: 58983
+1771667586330	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://automationexercise.com/static/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://pagead2.googlesyndication.com/bg/ldrxsr5DVt0LJFwH7eyIm9-lfqGZQ9aUDb8H3SphxsA.js, line 3818: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/ldrxsr5DVt0LJFwH7eyIm9-lfqGZQ9aUDb8H3SphxsA.js, line 3818: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/ldrxsr5DVt0LJFwH7eyIm9-lfqGZQ9aUDb8H3SphxsA.js, line 3818: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/ldrxsr5DVt0LJFwH7eyIm9-lfqGZQ9aUDb8H3SphxsA.js, line 3818: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/ldrxsr5DVt0LJFwH7eyIm9-lfqGZQ9aUDb8H3SphxsA.js, line 3818: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/ldrxsr5DVt0LJFwH7eyIm9-lfqGZQ9aUDb8H3SphxsA.js, line 3818: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/ldrxsr5DVt0LJFwH7eyIm9-lfqGZQ9aUDb8H3SphxsA.js, line 3818: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/ldrxsr5DVt0LJFwH7eyIm9-lfqGZQ9aUDb8H3SphxsA.js line 2 > eval, line 3818: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/ldrxsr5DVt0LJFwH7eyIm9-lfqGZQ9aUDb8H3SphxsA.js line 2 > eval, line 3818: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/ldrxsr5DVt0LJFwH7eyIm9-lfqGZQ9aUDb8H3SphxsA.js line 2 > eval, line 3818: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/ldrxsr5DVt0LJFwH7eyIm9-lfqGZQ9aUDb8H3SphxsA.js line 2 > eval line 3818 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/ldrxsr5DVt0LJFwH7eyIm9-lfqGZQ9aUDb8H3SphxsA.js line 2 > eval line 3818 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/ldrxsr5DVt0LJFwH7eyIm9-lfqGZQ9aUDb8H3SphxsA.js line 2 > eval, line 3818: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/ldrxsr5DVt0LJFwH7eyIm9-lfqGZQ9aUDb8H3SphxsA.js line 2 > eval, line 3818: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/ldrxsr5DVt0LJFwH7eyIm9-lfqGZQ9aUDb8H3SphxsA.js line 2 > eval, line 3818: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/ldrxsr5DVt0LJFwH7eyIm9-lfqGZQ9aUDb8H3SphxsA.js line 2 > eval line 3818 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/ldrxsr5DVt0LJFwH7eyIm9-lfqGZQ9aUDb8H3SphxsA.js line 2 > eval line 3818 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/ldrxsr5DVt0LJFwH7eyIm9-lfqGZQ9aUDb8H3SphxsA.js line 2 > eval line 3818 > eval line 1 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://automationexercise.com/static/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js, line 92: Script terminated by timeout at:
+M.prototype.unsubscribe@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:92:1285
+Vd/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:98:1521
+M/this.ie@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:92:990
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:82:523
+Mh/c/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:146:321
+Ua@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:51:339
+Pa.prototype.flush@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:51:127
+Ta@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:50:483
+Mh/c/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:146:293
+qc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:83:218
+n.ie@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:82:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:82:523
+qg/</</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:123:515
+Oa.prototype.yc/<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:50:315
+qg/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:123:524
+qc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:83:218
+n.ie@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:82:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:82:523
+qg/</</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:123:515
+Oa.prototype.yc/<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:50:315
+qg/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:123:524
+qc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:83:218
+n.ie@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:82:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:82:523
+h@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:95:477
+
+JavaScript warning: https://automationexercise.com/static/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1771667594705	Marionette	INFO	Stopped listening on port 58983
+Dynamically enable window occlusion 1
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
